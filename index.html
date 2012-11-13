@@ -69,7 +69,7 @@
         <div style="text-align: left;">
             <br>
         </div>
-        <div class="fragment visible" style="text-align: center;">This is how <b>Web Development</b> should be now.</div>
+        <div class="fragment" style="text-align: center;">This is how <b>Web Development</b> should be now.</div>
 </div>
 
 
@@ -116,9 +116,7 @@
                 <p>
                 <br>
             </p>
-    <pre>
-            <code class="javascript">square = function (x) { return x * x; };</code>
-        </pre>
+    <pre><code class="javascript">square = function (x) { return x * x; };</code></pre>
     <div>
         <br>
     </div>
@@ -127,9 +125,7 @@
 <div style="font: inherit;">
     <br>
 </div>
-<pre>
-        <code class="CoffeeScript">square =  (x) -&gt; x * x</code>
-    </pre>
+<pre><code class="CoffeeScript">square =  (x) -&gt; x * x</code></pre>
 <div>
     <br>
 </div>
@@ -144,11 +140,6 @@
     <br>
 </div>
     </div>
-
-
-
-
-
 </section>
 </section>
 <section>
@@ -168,16 +159,12 @@
 <div>
     <div style="font: inherit;">Server</div>
     <div style="font: inherit;">
-        <pre>
-        <code class="CoffeeScript">socket.on "event", (data) -&gt; console.log data</code>
-    </pre>
+        <pre><code class="CoffeeScript">socket.on "event", (data) -&gt; console.log data</code></pre>
         <br>
     </div>
     <div style="font: inherit;">Client</div>
     <div>
-        <pre>
-    <code class="CoffeeScript">socket.emit "event", { key: "value"}</code>
-</pre>
+        <pre><code class="CoffeeScript">socket.emit "event", { key: "value"}</code></pre>
     </div>
 </div>
 
@@ -192,16 +179,14 @@
 </div>
 <div>Server</div>
 <div>
-    <pre>
-    <code class="CoffeeScript">
+    <pre><code class="CoffeeScript">
   @client "/client.js": -&gt;
     @connect()
     @on connect: -&gt;
       @emit "event", key: "value"
       
   @on event: (data) -&gt; console.log data
-    </code>
-</pre>
+    </code></pre>
 </div>
 <div>
     <br>
